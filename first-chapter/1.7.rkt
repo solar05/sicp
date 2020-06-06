@@ -1,12 +1,5 @@
 #lang racket
 
-(define (new-if predicate then-clause else-clause)
-  (cond
-    (predicate then-clause)
-    (else else-clause)
-   )
-)
-
 (define (average x y) (/ (+ x y) 2))
 
 (define (improve guess x)
@@ -16,12 +9,11 @@
 (define (square x) (* x x))
 
 (define (good-enough? guess x)
-  (< (abs (- (square guess) x)) 0.001))
+  (< (abs (- (improve guess x) guess))
+     (* guess 0.001)))
 
 (define (sqrt-iter guess x)
   (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))
 )
 
 (define (sqrt x) (sqrt-iter 0.1 x))
-
-(sqrt 9)

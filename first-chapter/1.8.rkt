@@ -7,11 +7,10 @@
 (define (square x) (* x x))
 
 (define (good-enough? guess x)
-  (< (abs (- (improve guess x) guess))
-     (* guess 0.001)))
+ (= (improve guess x) guess))
 
 (define (cbrt x) (cbrt-iter 0.1 x))
 
 (define (cbrt-iter guess x)
   (if (good-enough? guess x) guess (cbrt-iter (improve guess x) x))
- )
+)
