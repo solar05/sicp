@@ -1,5 +1,5 @@
 #lang racket
-(reqiure rackunit)
+(require rackunit)
 
 (define (square n)
   (* n n))
