@@ -1,3 +1,7 @@
 *#*
 .DS*
 *~
+.idea/
+.lein-failures
+.lein-repl-history
+target/
