@@ -2,5 +2,5 @@
   (:require [sicp.chapter01.1-02 :as solution]
             [clojure.test :refer :all]))
 
-(deftest b-test
-  (testing "Result" (is (= -37/150 (solution/result)))))
+(deftest calc-test
+  (testing "Result of calc" (is (= -37/150 (solution/result)))))
