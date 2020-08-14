@@ -4,5 +4,5 @@
 
 (deftest pascal-triangle-test
   (testing "1_12 test"
-           (is (= 10 (solution/pascal-triangle 5 2)))
-           (is (= 6 (solution/pascal-triangle 4 2)))))
+    (is (= 10 (solution/pascal-triangle 5 2)))
+    (is (= 6 (solution/pascal-triangle 4 2)))))

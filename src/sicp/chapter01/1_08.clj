@@ -6,7 +6,7 @@
   (/ (+ (/ x (square guess)) (* 2 guess)) 3))
 
 (defn good-enough? [guess x]
- (= (improve guess x) guess))
+  (= (improve guess x) guess))
 
 (defn cbrt-iter [guess x]
   (if (good-enough? guess x) guess (cbrt-iter (improve guess x) x)))

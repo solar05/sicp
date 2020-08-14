@@ -8,9 +8,8 @@
 
 (defn mul [a b]
   (letfn [(iter-mul [a b result]
-         (cond (= 0 a) result
-               (not (even? a)) (iter-mul (halve a) (twice b) (+ b result))
-               :else (iter-mul (halve a) (twice b) result))
-               )]
-  (iter-mul a b 0)))
+            (cond (zero? a) result
+                  (not (even? a)) (iter-mul (halve a) (twice b) (+ b result))
+                  :else (iter-mul (halve a) (twice b) result)))]
+    (iter-mul a b 0)))
 

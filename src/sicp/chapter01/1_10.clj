@@ -1,10 +1,10 @@
 (ns sicp.chapter01.1-10)
 
 (defn A [x y]
-  (cond (= y 0) 0
-        (= x 0) (* 2 y)
+  (cond (zero? y) 0
+        (zero? x) (* 2 y)
         (= y 1) 2
-        :else (A (- x 1) (A x (- y 1)))))
+        :else (A (dec x) (A x (dec y)))))
 
 ;(f n) = 2n
 ;(g n) = 2^n
