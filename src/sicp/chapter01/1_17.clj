@@ -1,6 +1,6 @@
 (ns sicp.chapter01.1-17)
 
-(defn double [x]
+(defn twice [x]
   (+ x x))
 
 (defn halve [x]
@@ -8,5 +8,5 @@
 
 (defn mult [a b]
   (cond (= b 0) 0
-        (even? b) (mult (double a) (halve b))
+        (even? b) (mult (twice a) (halve b))
         :else (+ a (mult a (- b 1)))))

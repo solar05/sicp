@@ -3,9 +3,6 @@
 (defn square [x]
   (* x x))
 
-(defn even? [n]
-  (= (rem n 2) 0))
-
 (defn fast-expt [b n]
   (letfn [(iter-expt [b n a]
      (cond (= n 0) a
