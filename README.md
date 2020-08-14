@@ -1,6 +1,6 @@
 # sicp
 
-![Tests and linters](https://github.com/solar05/sicp/workflows/Clojure%20CI/badge.svg)
+![Clojure test and linters](https://github.com/solar05/sicp/workflows/Clojure%20test%20and%20linters/badge.svg)
 
 ## Description:
  My SICP solutions on Clojure language.
