@@ -23,11 +23,11 @@
   (time expr))
 
 (defn s-f-p [n counter]
-  (if (> counter 0)
+  (if (pos? counte)
     (s-f-p (+ n 2) (dec counter))
     (s-f-p (+ n 2) counter)))
 
 (defn search-for-primes [n counter]
   (if (even? n)
     (s-f-p (inc n) (dec counter)
-    (s-f-p (+ n 2) counter))))
+           (s-f-p (+ n 2) counter))))

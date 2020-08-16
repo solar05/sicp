@@ -1,0 +1,1 @@
+;In Hugo variant of expmod procedure call (expmid base (/exp 2) m) done twice for every iteration instead of one.

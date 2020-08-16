@@ -1,0 +1,1 @@
+;From that testing it is clear that algotirthm twice as slow, that supports the theory of logarithmic growth.
