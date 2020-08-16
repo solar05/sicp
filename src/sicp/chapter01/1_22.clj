@@ -23,7 +23,7 @@
   (time expr))
 
 (defn s-f-p [n counter]
-  (if (pos? counte)
+  (if (pos? counter)
     (s-f-p (+ n 2) (dec counter))
     (s-f-p (+ n 2) counter)))
 
