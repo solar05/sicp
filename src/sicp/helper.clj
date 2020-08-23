@@ -9,3 +9,9 @@
     0
     (+ (term a)
        (sum term (next a) next b))))
+
+(defn gcd [m n]
+  (cond
+    (< m n) (gcd n m)
+    (zero? n) m
+    :else (gcd n (rem m n))))
