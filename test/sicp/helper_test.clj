@@ -17,6 +17,9 @@
   (testing "GCD test."
     (is (= 1 (helper/gcd 5 98)))
     (is (= 4 (helper/gcd 4 16))))
+  (testing "Average test"
+    (is (= 1.0 (helper/avg [1 1 1])))
+    (is (= 3.0 (helper/avg [1 2 3 4 5]))))
   (testing "Sum test."
     (is (= 3.139592655589783 (* 8 (pi-sum 1 1000))))))
 

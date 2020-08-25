@@ -15,3 +15,8 @@
     (< m n) (gcd n m)
     (zero? n) m
     :else (gcd n (rem m n))))
+
+(defn avg
+  [seq]
+  (float (/ (reduce + seq)
+            (count seq))))
