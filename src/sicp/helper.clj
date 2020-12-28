@@ -10,11 +10,11 @@
     (+ (term a)
        (sum term (next a) next b))))
 
-(defn gcd [m n]
-  (cond
-    (< m n) (gcd n m)
-    (zero? n) m
-    :else (gcd n (rem m n))))
+(defn gcd [a b]
+  (loop [a (Math/abs a)
+         b (Math/abs b)]
+    (if (zero? b) a
+        (recur b (mod a b)))))
 
 (defn avg
   [seq]
