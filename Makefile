@@ -5,5 +5,6 @@ fix:
 		lein cljfmt fix
 check-kibit:
 		lein kibit
-tests:
+test:
 		lein test
+.PHONY: test
