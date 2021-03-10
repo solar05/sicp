@@ -1,5 +1,4 @@
-(ns sicp.chapter01.1-37
-  (:require [sicp.helper :refer [round]]))
+(ns sicp.chapter01.1-37)
 
 (defn cont-frac-rec [n d k]
   (letfn [(rec [x]
@@ -16,5 +15,5 @@
     (iter k 0)))
 
 (defn golden-ration-approximation [n]
-  (let [one (fn [x] 1.0)]
+  (let [one (fn [_] 1.0)]
     (/ 1 (cont-frac-iter one one n))))

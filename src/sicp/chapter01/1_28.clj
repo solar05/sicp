@@ -1,6 +1,5 @@
 (ns sicp.chapter01.1-28
-  (:require [sicp.chapter01.1-27 :refer [expmod]]
-            [sicp.helper :refer [square]]))
+  (:require [sicp.chapter01.1-27 :refer [expmod]]))
 
 (defn miller-rabin-test [a n]
   (cond

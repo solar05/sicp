@@ -1,5 +1,4 @@
-(ns sicp.chapter01.1-22
-  (:require [sicp.helper :as h]))
+(ns sicp.chapter01.1-22)
 
 (defn square [n]
   (* n n))
@@ -29,5 +28,5 @@
 
 (defn search-for-primes [n counter]
   (if (even? n)
-    (s-f-p (inc n) (dec counter)
-           (s-f-p (+ n 2) counter))))
+    (s-f-p (inc n) (dec counter))
+    (s-f-p (+ n 2) counter)))
