@@ -5,3 +5,4 @@
 .lein-failures
 .lein-repl-history
 target/
+.clj-kondo/.cache

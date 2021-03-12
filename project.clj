@@ -8,6 +8,7 @@
   :target-path "target/%s"
   :plugins [
             [lein-cljfmt "0.6.8"]
-            [lein-kibit "0.1.8"]
-            ]
-  :profiles {:uberjar {:aot :all}})
+            [lein-kibit "0.1.8"]]
+  :aliases {"kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
+  :profiles {:uberjar {:aot :all}
+             :kaocha {:dependencies [[lambdaisland/kaocha "1.0.829"]]}})

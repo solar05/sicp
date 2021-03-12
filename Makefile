@@ -6,7 +6,7 @@ fix:
 check-kibit:
 	lein kibit
 kondo:
-	clj-kondo --lint src	
+	clj-kondo --lint src --progress
 test:
-	lein test
+	bin/kaocha
 .PHONY: test
