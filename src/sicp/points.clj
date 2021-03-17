@@ -23,5 +23,4 @@
         x2 (x-point second-point)
         y1 (y-point first-point)
         y2 (y-point second-point)]
-    (Math/sqrt
-     (+ (Math/pow (- x2 x1) 2) (Math/pow (- y2 y1) 2)))))
+    (Math/hypot (- x2 x1) (- y2 y1))))
