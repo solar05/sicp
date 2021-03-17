@@ -6,3 +6,4 @@
 .lein-repl-history
 target/
 .clj-kondo/.cache
+.nrepl*

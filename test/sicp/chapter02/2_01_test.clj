@@ -1,6 +1,6 @@
 (ns sicp.chapter02.2-01-test
   (:require [clojure.test :refer :all]
-            [sicp.ratio :refer :all]
+            [sicp.chapter02.2-01 :refer :all]
             [sicp.test-helper :refer :all]))
 
 (deftest test-sqrt
