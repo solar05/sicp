@@ -1,7 +1,6 @@
 (ns sicp.chapter02.2-04)
 
 ; Cons returns a lambda of two args which takes two innitial values
-#_:clj-kondo/ignore
 (defn cons [a b]
   (fn [m] (m a b)))
 

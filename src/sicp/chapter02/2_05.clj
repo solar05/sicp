@@ -5,7 +5,6 @@
     (iter-div (/ n d) d (inc i))
     i))
 
-#_:clj-kondo/ignore
 (defn cons [x y]
   (* (Math/pow 2 x) (Math/pow 3 y)))
 
