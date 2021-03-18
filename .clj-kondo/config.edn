@@ -1,1 +1,3 @@
- {:output {:progress true}}
+ {:output {:progress true}
+  :linters {:unused-binding [:exclude [(sicp.chapter02.2-04/car [p q])
+                                          (sicp.chapter02.2-04/cdr [p q])]]}}
