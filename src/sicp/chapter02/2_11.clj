@@ -14,8 +14,8 @@
             (cond
               (and (>= (upper-bound i) 0)
                    (>= (lower-bound i) 0)) 1
-              (and (< (upper-bound i) 0)
-                   (< (lower-bound i) 0)) -1
+              (and (neg? (upper-bound i))
+                   (neg? (lower-bound i))) -1
               :else 0))]
     (let [es-x (endpoint-sign x)
           es-y (endpoint-sign y)
