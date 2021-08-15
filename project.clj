@@ -6,9 +6,8 @@
   :dependencies [[org.clojure/clojure "1.10.1"]]
   :main ^:skip-aot sicp.core
   :target-path "target/%s"
-  :plugins [
-            [lein-cljfmt "0.6.8"]
+  :plugins [[lein-cljfmt "0.8.0"]
             [lein-kibit "0.1.8"]]
   :aliases {"kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
   :profiles {:uberjar {:aot :all}
-             :kaocha {:dependencies [[lambdaisland/kaocha "1.0.829"]]}})
+             :kaocha {:dependencies [[lambdaisland/kaocha "1.0.861"]]}})
