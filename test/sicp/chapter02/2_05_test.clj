@@ -3,8 +3,8 @@
             [sicp.chapter02.2-05 :refer :all]
             [sicp.test-helper :refer :all]))
 
-(def pair (cons 2 3))
+(def pair (my-cons 2 3))
 
 (deftest test-cons-2
-  (assert-equal 2 (car pair))
-  (assert-equal 3 (cdr pair)))
+  (assert-equal 2 (my-car pair))
+  (assert-equal 3 (my-cdr pair)))

@@ -7,7 +7,8 @@
   :main ^:skip-aot sicp.core
   :target-path "target/%s"
   :plugins [[lein-cljfmt "0.8.0"]
-            [lein-kibit "0.1.8"]]
+            [lein-kibit "0.1.8"]
+            [jonase/eastwood "0.9.6"]]
   :aliases {"kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
   :profiles {:uberjar {:aot :all}
              :kaocha {:dependencies [[lambdaisland/kaocha "1.0.861"]]}})

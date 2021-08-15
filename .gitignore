@@ -7,3 +7,5 @@
 target/
 .clj-kondo/.cache
 .nrepl*
+.eastwood
+

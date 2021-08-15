@@ -4,11 +4,11 @@
 
 (defn cube [num] (* num num num))
 
-(defn sum [term a next b]
+(defn sum [term a next-item b]
   (if (> a b)
     0
     (+ (term a)
-       (sum term (next a) next b))))
+       (sum term (next-item a) next-item b))))
 
 (defn gcd [a b]
   (loop [a (Math/abs a)

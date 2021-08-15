@@ -5,11 +5,11 @@
     (iter-div (/ n d) d (inc i))
     i))
 
-(defn cons [x y]
+(defn my-cons [x y]
   (* (Math/pow 2 x) (Math/pow 3 y)))
 
-(defn car [z]
+(defn my-car [z]
   (iter-div z 2 0))
 
-(defn cdr [z]
+(defn my-cdr [z]
   (iter-div z 3 0))

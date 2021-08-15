@@ -10,4 +10,5 @@
             (cond (< n 3) n
                   (<= count 0) a
                   :else (fun-iter (+ a (* 2 b) (* 3 c)) a b (dec count)))
-            (fun-iter 2 1 0 (- n 2)))]))
+            (fun-iter 2 1 0 (- n 2)))]
+    (fun-iter (dec n) (- n 2) (- n 3) 0)))

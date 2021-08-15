@@ -1,10 +1,10 @@
 (ns sicp.chapter01.1-30)
 
-(defn iter-sum [term a next b]
+(defn iter-sum [term a next-item b]
   (letfn [(iter [a result]
             (if (> a b)
               result
-              (iter (next a) (+ result (term a)))))]
+              (iter (next-item a) (+ result (term a)))))]
     (iter a 0)))
 
 (defn simpson-integral [f a b n]
