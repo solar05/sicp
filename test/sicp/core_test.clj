@@ -3,5 +3,5 @@
             [sicp.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 0))))
+  (testing "Fixed, no fail."
+    (is (zero? 0))))

@@ -1,14 +1,14 @@
 checks: lint check-kibit check-eastwood kondo
 lint:
-	lein cljfmt check
+	clj -M:cljfmt-check
 fix:
-	lein cljfmt fix
+	clj -M:cljfmt-fix
 check-kibit:
-	lein kibit
+	clj -M:kibit
 check-eastwood:
-	lein eastwood "{:exclude-linters [:reflection :no-ns-form-found]}"
+	clj -M:eastwood
 kondo:
 	clj-kondo --lint src --config .clj-kondo/config.edn
 test:
-	bin/kaocha
+	clj -M:test
 .PHONY: test
