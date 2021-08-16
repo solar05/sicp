@@ -1,14 +1,14 @@
 checks: lint check-kibit check-eastwood kondo
 lint:
-	clojure -M:cljfmt-check
+	clj -M:cljfmt-check
 fix:
-	clojure -M:cljfmt-fix
+	clj -M:cljfmt-fix
 check-kibit:
-	clojure -M:kibit
+	clj -M:kibit
 check-eastwood:
-	clojure -M:eastwood
+	clj -M:eastwood
 kondo:
 	clj-kondo --lint src --config .clj-kondo/config.edn
 test:
-	clojure -M:test
+	clj -M:test
 .PHONY: test
