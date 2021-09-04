@@ -1,7 +1,7 @@
 {:paths ["src"]
  :deps {org.clojure/clojure {:mvn/version "1.10.3"}}
  :aliases {:test {:extra-paths ["test"]
-                  :extra-deps  {lambdaisland/kaocha {:mvn/version "1.0.861"}}
+                  :extra-deps  {lambdaisland/kaocha {:mvn/version "1.0.887"}}
                   :main-opts   ["-m" "kaocha.runner"]}
            :eastwood {:main-opts ["-m"
                                   "eastwood.lint"
