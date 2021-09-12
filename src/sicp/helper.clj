@@ -25,3 +25,9 @@
   (let [factor (Math/pow 10 precision)]
     (/ (Math/floor (* d factor))
        factor)))
+
+(defn acc [op init elems]
+  (if (empty? elems)
+    init
+    (op (first elems)
+        (acc op init (rest elems)))))

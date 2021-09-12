@@ -1,7 +1,5 @@
 (ns sicp.core
   (:gen-class))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& _args]
+(defn -main [& _args]
   (println "Hello, World!"))
