@@ -1,4 +1,3 @@
-
 (ns sicp.chapter02.2-52
   (:require [sicp.chapter02.2-45 :refer [right-split up-split]]
             [sicp.chapter02.2-46 :refer [make-vect]]
