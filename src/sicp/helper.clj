@@ -31,3 +31,10 @@
     init
     (op (first elems)
         (acc op init (rest elems)))))
+
+(defn error? [{e :error}]
+  (true? e))
+
+(defn error [message]
+  {:error true
+   :message message})
