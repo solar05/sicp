@@ -4,7 +4,7 @@
             [sicp.helper :as h]
             [sicp.test-helper :refer [assert-equal assert-true]]))
 
-(deftest test-deriv
+(deftest test-deriv-first
   (assert-equal 1 (ch/deriv '(+ x 3) 'x))
   (assert-equal 'y (ch/deriv '(* x y) 'x))
   (assert-equal '(+ (* x y) (* y (+ x 3))) (ch/deriv '(* (* x y) (+ x 3)) 'x))
