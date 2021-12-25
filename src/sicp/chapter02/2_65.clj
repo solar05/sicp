@@ -6,8 +6,8 @@
 
 (defn union-set [s1 s2]
   (ch4/list->tree (ch2/union-set (ch3/tree->list-second s1)
-                                             (ch3/tree->list-second s2))))
+                                 (ch3/tree->list-second s2))))
 
 (defn intersection-set [s1 s2]
   (ch4/list->tree (ch1/intersection-set (ch3/tree->list-second s1)
-                                                    (ch3/tree->list-second s2))))
+                                        (ch3/tree->list-second s2))))
