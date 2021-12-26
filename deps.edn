@@ -6,7 +6,7 @@
            :eastwood {:main-opts ["-m"
                                   "eastwood.lint"
                                   {:exclude-linters
-                                   [:reflection :no-ns-form-found]}]
+                                   [:reflection :no-ns-form-found :def-in-def]}]
 	          :extra-deps {jonase/eastwood {:mvn/version "RELEASE"}}}
            :kibit {:extra-deps {tvaughan/kibit-runner {:mvn/version "1.0.1"}}
                    :main-opts ["-m" "kibit-runner.cmdline"]}

@@ -1,4 +1,5 @@
  {:output {:progress true
            :exclude-files ["2_04" "2_05"]}
   :linters {:unused-binding [:exclude [(sicp.chapter02.2-04/car [p q])
-                                          (sicp.chapter02.2-04/cdr [p q])]]}}
+                                          (sicp.chapter02.2-04/cdr [p q])]]
+            :inline-def [:exclude [sicp.chapter02.2-73]]}}

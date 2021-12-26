@@ -7,13 +7,44 @@
             [sicp.test-helper :refer [assert-equal]]))
 
 (defonce song-message
-  (->> '(Get a job
-             Sha na na na na na na na na
-             Get a job
-             Sha na na na na na na na na
-             Wah yip yip yip yip yip yip yip yip yip
-             Sha boom)
-       (map (comp symbol s/upper-case))))
+  (map
+   (comp symbol s/upper-case)
+   '(Get
+     a
+     job
+     Sha
+     na
+     na
+     na
+     na
+     na
+     na
+     na
+     na
+     Get
+     a
+     job
+     Sha
+     na
+     na
+     na
+     na
+     na
+     na
+     na
+     na
+     Wah
+     yip
+     yip
+     yip
+     yip
+     yip
+     yip
+     yip
+     yip
+     yip
+     Sha
+     boom)))
 
 (deftest test-rock-songs-alphabet
   (let [tree ch/rock-songs-alphabet
