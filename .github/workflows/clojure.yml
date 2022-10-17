@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.1.0
     - uses: DeLaGuardo/setup-clj-kondo@master
       with:
-        version: '2022.02.09'
-    - uses: DeLaGuardo/setup-clojure@3.7
+        version: '2022.10.14'
+    - uses: DeLaGuardo/setup-clojure@9.5
       with:
-        tools-deps: '1.10.3.1082'
+        tools-deps: '1.11.1.1165'
     - name: Run checks
       run: make checks
     - name: Run tests
