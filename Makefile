@@ -1,4 +1,4 @@
-checks: lint check-kibit check-eastwood kondo
+checks: lint check-kibit check-eastwood check-kondo
 
 lint:
 	clojure -M:cljfmt-check
@@ -12,7 +12,7 @@ check-kibit:
 check-eastwood:
 	clojure -M:eastwood
 
-kondo:
+check-kondo:
 	clj-kondo --lint src --config .clj-kondo/config.edn
 
 test:
