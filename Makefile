@@ -18,4 +18,7 @@ check-kondo:
 test:
 	clojure -M:test
 
+check-outdated:
+	clojure -Sdeps '{:deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}}' -M -m antq.core
+
 .PHONY: test
