@@ -1,5 +1,5 @@
 (ns sicp.chapter02.2-75
-  (:require [sicp.helper :as sicp]))
+  (:require [sicp.helper :as h]))
 
 (defn apply-generic [op arg]
   (arg op))
@@ -21,10 +21,10 @@
             (cond
               (= op 'real-part) real
               (= op 'imag-part) imag
-              (= op 'magnitude) (Math/sqrt (+ (sicp/square real)
-                                              (sicp/square imag)))
+              (= op 'magnitude) (Math/sqrt (+ (h/square real)
+                                              (h/square imag)))
               (= op 'angle) (Math/atan2 imag real)
-              :else (sicp/error (str "Unknown operation: " op))))]
+              :else (h/error (str "Unknown operation: " op))))]
     dispatch))
 
 (defn make-from-mag-ang [mag ang]
@@ -34,5 +34,5 @@
               (= op 'imag-part) (* mag (Math/sin ang))
               (= op 'magnitude) mag
               (= op 'angle) ang
-              :else (sicp/error (str "Unknown operation: " op))))]
+              :else (h/error (str "Unknown operation: " op))))]
     dispatch))

@@ -1,7 +1,7 @@
 (ns sicp.chapter02.2-73
   (:require [sicp.chapter02.2-56 :refer [make-exponentiation make-product
                                          make-sum same-variable? variable?]]
-            [sicp.helper :as sicp])
+            [sicp.helper :as h])
   (:refer-clojure :exclude [get]))
 
 (defn install-package-deriv []
@@ -52,5 +52,5 @@
 
   (defmethod get :default [_ _]
     (fn [exp _]
-      (sicp/error (str "unknown expression type -- DERIV " exp))))
+      (h/error (str "unknown expression type -- DERIV " exp))))
   'done)

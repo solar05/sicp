@@ -1,7 +1,7 @@
 (ns sicp.chapter02.2-73-test
   (:require [clojure.test :refer [deftest]]
             [sicp.chapter02.2-73 :as ch]
-            [sicp.helper :as sicp]
+            [sicp.helper :as h]
             [sicp.test-helper :refer [assert-equal assert-true]]))
 
 (deftest test-deriv-73
@@ -15,4 +15,4 @@
                 (ch/deriv '(** (* 3 x) 5) 'x))
   (assert-equal '(* 2 x)
                 (ch/deriv '(** x 2) 'x))
-  (assert-true (sicp/error? (ch/deriv '(! 4 5) 'x))))
+  (assert-true (h/error? (ch/deriv '(! 4 5) 'x))))
