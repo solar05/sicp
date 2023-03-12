@@ -13,7 +13,7 @@
               (if (= input password)
                 action
                 (if (< @attempts-count 7)
-                  (do 
+                  (do
                     (swap! attempts-count inc)
                     (fn [_] "Incorrect password!"))
                   call-the-cops)))
