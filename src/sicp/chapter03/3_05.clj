@@ -1,5 +1,4 @@
-(ns sicp.chapter03.3-05
-  (:require [sicp.helper :refer [gcd]]))
+(ns sicp.chapter03.3-05)
 
 (defn circle [center-x center-y radius]
   (fn [x y]
