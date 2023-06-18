@@ -6,6 +6,8 @@
 
 (defn cons [x y] (list x y))
 
+(defn in? [x elem] (some #(= elem %) x))
+
 (defn pair? [data]
   (and (list? data)
        (= (count data) 2)))
